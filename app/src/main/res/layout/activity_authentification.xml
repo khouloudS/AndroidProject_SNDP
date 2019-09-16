@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tn.agil.miniprojet.agil.Authentification"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg">
+    </android.support.v7.widget.Toolbar>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout android:padding="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent" >
+            <LinearLayout android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextLog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="username"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editTextPass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    />
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginLeft="100dp"
+                    android:text="    Connecter   "
+                    android:background="#E0E0E0"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

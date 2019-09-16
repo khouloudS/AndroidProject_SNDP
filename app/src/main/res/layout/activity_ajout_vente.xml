@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    tools:context="tn.agil.miniprojet.agil.AjoutClient"
+    android:weightSum="3"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+        >
+        <TextView
+            android:id="@+id/qte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantité : "
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="8dp" />
+
+        <EditText
+            android:id="@+id/editQte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="13sp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:digits="0123456789"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+        >
+        <TextView
+            android:id="@+id/prod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produit : "
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="8dp"
+            />
+
+        <Spinner
+            android:id="@+id/prodList"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            >
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+        >
+        <TextView
+            android:id="@+id/idstation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Station : "
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="8dp"
+            />
+
+        <Spinner
+            android:id="@+id/stationList"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            >
+
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAjout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_weight="1"
+        android:text="Ajouter Vente"
+        android:textColor="#000000" />
+
+
+
+
+
+
+
+</LinearLayout>

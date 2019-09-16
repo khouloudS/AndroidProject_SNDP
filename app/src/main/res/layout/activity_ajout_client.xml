@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    tools:context="tn.agil.miniprojet.agil.AjoutClient"
+    android:weightSum="5"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/Cin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="8dp"
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:text="Cin : "
+            />
+
+        <EditText
+            android:id="@+id/editCin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="8"
+            android:digits="0123456789"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="13sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:text="Nom : "
+            />
+
+        <EditText
+            android:id="@+id/editN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:textSize="13sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/Prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prenom  : "
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="8dp"
+            />
+
+        <EditText
+            android:id="@+id/editP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+        >
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N° Telephone : "
+            android:padding="16dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="8dp"
+            />
+
+        <EditText
+            android:id="@+id/editT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="13sp"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:digits="0123456789"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAjout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="260dp"
+        android:text="Ajouter"
+        android:textColor="#000000"/>
+
+
+
+
+
+
+
+</LinearLayout>
